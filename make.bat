@@ -13,5 +13,5 @@ IF [%1]==[] (
  )
 )
 IF NOT EXIST dist (mkdir dist)
-typst %command% ruleset-%target%.typ dist/ruleset-%target%.pdf
+typst --font-path=./fonts %command% ruleset-%target%.typ dist/ruleset-%target%.pdf
 ENDLOCAL
