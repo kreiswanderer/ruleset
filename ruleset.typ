@@ -9,7 +9,10 @@
 #show heading.where(level: 3): set text(size: 12pt)
 #set path(closed: true)
 #show outline.entry.where(level: 1): set text(font: "Almendra", size: 12pt)
-#show outline.entry.where(level: 2): it => [#h(1em)#box(width: 2em, it.prefix())#it.inner()]
+#show outline.entry.where(level: 2): it => link(
+  it.element.location(),
+  it.indented(box(width: 2em, it.prefix()), it.body()),
+)
 #let title = align(center, text(font: "Cardinal", size: 48pt)[Kreiswanderer <title>])
 #let subtitle = align(center, text(font: "Almendra", size: 20pt)[Edition 0.5 <subtitle>])
 #show regex("\<[A-Z\W]+\>"): it => context{
@@ -26,6 +29,6 @@
 
 #subtitle
 
-#outline(title: [Inhaltsverzeichnis])
+#outline(title: [Inhaltsverzeichnis], depth: 2)
 
 #include("pages.typ")
