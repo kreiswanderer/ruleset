@@ -28,4 +28,4 @@
 
 #outline(title: [Inhaltsverzeichnis])
 
-#include("pages/0_base-rules.typ")
+#include("pages.typ")
