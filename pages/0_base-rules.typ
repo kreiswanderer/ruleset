@@ -7,8 +7,6 @@ Die Basisattribute sind Körperkraft, Geschicklichkeit, Ausdauer, Willenskraft, 
 Weitere Basiswerte werden für das Spiel gelegentlich benötigt:
 #table(
   columns: (auto, auto, 1fr),
-  inset: 1em,
-  align: horizon,
 
   [*Verteidigung*],
   [Geschicklichkeit + Fokus + Koordination],
