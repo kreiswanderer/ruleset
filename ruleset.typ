@@ -1,6 +1,10 @@
 #set document(title: [Kreiswanderer Regelwerk])
 #set page(paper: "a4")
 #set text(font: "Crimson Pro", lang: "de", region: "de")
+#set table(
+  stroke: none,
+  inset: (left: 0pt, right: 1em),
+)
 #show heading: set text(font: "Almendra", weight: "regular")
 #show heading.where(level: 1): it => {pagebreak(weak: true); it}
 #show heading.where(level: 1): set text(size: 24pt)
