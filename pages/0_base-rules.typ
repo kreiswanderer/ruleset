@@ -2,7 +2,7 @@
 == Basiswerte
 Jeder Spielercharakter hat verschiedene Eigenschaften, die ihn auszeichnen. Attribute bezeichnen hierbei schwer veränderliche Eigenschaften, Fertigkeiten bezeichnen Kenntnisse und angelernte Fähigkeiten. Sie kommen in jeder Talentprobe vor und werden auf der Seite ATTRIBUTE UND FERTIGKEITEN genauer beschrieben. Zusätzlich dazu führen Modifikatoren zusätzliche Regelbausteine ein oder verändern den Ablauf bestimmter Handlungen. Wenn über mehrere Spielrunden gespielt wird, oder neue Charaktere erstellt werden sollen, sind die Schritte dazu auf der Seite CHARAKTERENTWICKLUNG beschrieben.
 
-Die Basisattribute sind Körperkraft, Geschicklichkeit, Ausdauer, Willenskraft, Intuition und Fokus. Die Basisfertigkeiten sind Bildung, Fernkampf, Fertigung, Körperbeherrschung, Kreativität, Logik, Nahkampf, Orientierung, Redekunst und Wahrnehmung.
+Die Basisattribute sind Körperkraft, Geschicklichkeit, Ausdauer, Willenskraft, Intuition und Fokus. Die Basisfertigkeiten sind Bildung, Charisma, Empathie, Fertigung, Gewalt, Koordination, Kreativität, Logik, Orientierung und Wahrnehmung.
 
 Weitere Basiswerte werden für das Spiel gelegentlich benötigt:
 #table(
@@ -10,26 +10,21 @@ Weitere Basiswerte werden für das Spiel gelegentlich benötigt:
   inset: 1em,
   align: horizon,
 
-  // Eventuell mit Essenz zusammenfassen, die Essenz wäre dann eine Art "so lange kann ich auf Kampfhandlungen reagieren" mit W10 absorbiertem Schaden pro Essenzpunkt
+  [*Verteidigung*],
+  [Geschicklichkeit + Fokus + Koordination],
+  [Zielwert gegnerischer Kampfhandlungen],
+
+  [*Initiative*],
+  [Geschicklichkeit + Intuition + Wahrnehmung],
+  [Beeinflusst die Reihenfolge der Akteure im Kampf],
+
   [*Trefferpunkte*],
-  [3 × Ausdauer + 2 × Körperkraft + Willenskraft],
+  [Ausdauer + Willenskraft + Gewalt],
   [Physische Belastbarkeit bis zur Erschöpfung],
 
   [*Essenz*],
   [Summe dreier beliebiger Attribute],
-  [Magische Dingens to be defined],
-
-  [*Initiative*],
-  [Intuition],
-  [Beeinflusst die Reihenfolge der Akteure im Kampf],
-
-  [*Verteidigung*],
-  [Geschicklichkeit],
-  [Zielwert gegnerischer Kampfhandlungen],
-
-  [*Bewegungsweite*],
-  [Ausdauer + Geschicklichkeit],
-  [Bewegungsradius pro Kampfrunde],
+  [Kapazität magischer Energie],
 )
 
 == Talentproben
@@ -45,18 +40,19 @@ Talentproben kommen zum Einsatz, wenn der Ausgang einer Situation nicht vollstä
 4. Ergebnis = Attribut + Fertigkeit + Probenwurf + Essenzwurf
  - Probenwürfel: 1 explodierender W10
  - Essenzwürfel: Anzahl eingesetzter Essenzpunkte in W10
-5. Qualität = Ergebnis − Zielwert
-6. Bei Qualität ≥ 0 gelingt die Talentprobe, sonst ist sie misslungen
+5. Qualität = Ergebnis − Zielwert, davon die Anzahl angefangener Zehnerschritte
+6. Bei Qualität > 0 gelingt die Talentprobe, sonst ist sie misslungen
 
-Die Qualität bestimmt, wie gut oder wie schlecht eine Talentprobe ausgefallen ist. Bei einer Qualität
-von 10 oder mehr ist die Probe ein kritischer Erfolg, bei dem noch besondere Zusatzeffekte auftreten.
-Bei einer Qualität von -10 oder weniger tritt ein kritischer Misserfolg auf, der besondere negative
-Effekte mit sich bringt.
+Die Qualität bestimmt, wie gut oder wie schlecht eine Talentprobe ausgefallen ist. Ab einer Qualität
+von 3 spricht man üblicherweise von einer meisterlichen oder gar magischen Arbeit, eine Qualität von
+7 oder mehr ist üblicherweise nur durch göttliches Eingreifen überhaupt produzierbar. Ähnliches gilt
+für Werte unter 0: ist eine Qualität von -1 einfach eine nicht gelungene Arbeit, können unter einer
+Qualität von -2 auch weitere Konsequenzen drohen.
 
 Anmerkung zum Zielwert: Während ein Zielwert von 2 oder weniger nur für die Qualität relevant ist
 (beschreibt im Prinzip eine Tätigkeit, die jeder Humanoide ohne Anstrengungen ausüben kann), ist der
 Zielwert 30 das Maximum normalmenschlicher Fähigkeiten. Ein Zielwert von 5 beschreibt etwa
-Routineaufgaben, Zielwerte von 10 oder mehr sind alltägliche, aber durchaus fordernde
+Routineaufgaben, Zielwerte von 10 oder mehr sind alltägliche
 Herausforderungen. Ab einem Zielwert von 20 ruft man tendenziell einen Experten auf dem Gebiet
 dazu.
 
